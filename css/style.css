@@ -1,0 +1,482 @@
+/*Comentarios*/
+
+
+html{
+    font-size: 62.5%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*
+
+Programación CSS Header
+
+*/
+
+.header-container{
+    display: flex;
+    min-height: 50px;
+    background-color:bisque;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img{
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+
+.text-container a{
+    display: flex;
+    color:black;
+    text-decoration: none;
+    font-size: 23px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.navbar ul li a{
+    display: flex;
+    padding: 10px;
+    /*width: 80px;*/
+    justify-content:space-around;
+    color: rgb(12, 2, 2);
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+
+.enlaces:visited{
+    color:blue
+}
+.enlaces:hover{
+   color: white
+}
+.enlaces:active{
+    color:lime
+}
+
+
+/*
+
+index.html --> Programación CSS SECCION FOTO PRINCIPAL BOOSTRAP
+
+*/
+
+.ppal-container{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.carousel{
+    max-width: 100%;
+    height: auto;
+}
+.carousel-inner{
+    max-width: 100%;
+    height: auto;
+}
+
+.d-block{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+/*
+
+index.html --> Programación CSS SECCION FOTOS
+
+*/
+
+.photos-container{
+    display: flex;
+    width: 100%;
+    height: 490px;
+    /*border: 1px solid green;*/
+    background-color:bisque;
+    /*justify-content: center;*/
+    justify-content: space-around;
+}
+
+.photos{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-around; 
+}
+
+
+.photos-ancho1{
+    width: 250px;
+    text-align: center;
+}
+.photos-ancho2{
+    width: 250px;
+    text-align: center;
+}
+.photos-ancho3{
+    width: 250px;
+    text-align: center;
+}
+.photos-ancho4{
+    width: 250px;
+    text-align: center;
+}
+
+.photos-titulos{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.photos-img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+
+}
+
+.photos-text{
+    font-size: 15px;
+    font-style: italic;
+
+}
+
+/*
+
+experiencia.html --> Programación con GRID
+
+*/
+
+.grid-container{
+    display:grid;
+    height: 2080px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33% 7% 25% 10% 25%;
+    grid-column-gap: 5%;
+    background-color: beige;
+    grid-template-areas: 
+    'I1 I1'
+    'I2 I2'
+    'I3 I4'
+    'I7 I7'
+    'I5 I6'
+}
+
+.grid-container .grid-item{
+    /*border: solid 1px;*/
+    font-size: 21px;
+}
+
+/*CSS I1*/
+
+.first-item{
+    grid-area: I1;
+    display: inline-block;
+}
+
+.firstitem-img{
+    display: flex;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.firstitem-recuadro{
+    width: 35%;
+    height: 45%;
+    border: solid 1px;
+    position: relative;
+    display: flex;
+    background-color: currentColor;
+    position: relative;
+    opacity: 70%;
+    top: -70%;
+    left: 35%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.firstitem-texto{
+    width: 35%;
+    height: 45%;
+    display: flex;
+    position: relative;
+    top: -115%;
+    left: 35%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.firstitem-h2{
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.firstitem-h4{
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.firstitem-p{
+    color:white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+
+/*CSS I2*/
+
+.second-item{
+    grid-area:I2;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seconditem-h2{
+    font-size: 50px;
+    color: green;
+}
+
+.seconditem-p{
+    font-size: 30px;
+    color: green;
+}
+
+/*CSS I3*/
+
+.third-item{
+    grid-area:I3;
+    display: flex;
+    flex-direction: column;
+    transform: translate(20%,0);
+}
+
+.thirditem-img{
+    width: 75%;
+    height: 75%;
+    border-radius: 15px;
+}
+
+.thirditem-h2{
+    width: 75%;
+}
+
+.thirditem-p{
+    width: 75%;
+}
+
+
+
+
+
+/*CSS I4*/
+
+.four-item{
+    grid-area:I4;
+    display: flex;
+    flex-direction: column;
+    /*transform: translate(-10%,0);*/
+}
+
+.fouritem-img{
+    width: 75%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.fouritem-h2{
+    width: 75%;
+}
+
+.fouritem-p{
+    width: 75%;
+}
+
+
+
+
+
+/*CSS I5*/
+
+.five-item{
+    grid-area:I5;
+    display: flex;
+    flex-direction: column;
+    transform: translate(20%,-33%);
+}
+
+.fiveitem-img{
+    width: 75%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.fiveitem-h2{
+    width: 75%;
+}
+
+.fiveitem-p{
+    width: 75%;
+}
+
+
+/*CSS I6*/
+
+.six-item{
+    grid-area:I6;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0%,-3%);
+}
+
+.sixitem-img{
+    width: 70%;
+    height: 70%;
+    border-radius: 15px;
+}
+
+.sixitem-h2{
+    width: 75%;
+}
+
+.sixitem-p{
+    width: 75%;
+}
+
+
+.seven-item{
+    grid-area:I7;
+}
+
+/*
+
+Programación CSS FOOTER
+
+*/
+
+.footer-container{
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    background-color:rgb(132, 139, 137);
+}
+
+
+.footer-rs{
+    font-size: 30px;
+    width: 500px;
+    margin-left: 20px;
+}
+
+.footer-container p{
+    font-size: 20px;
+}
+
+.footer-text{
+    justify-content: center;
+}
+
+
+
+/*Media queries*/
+
+@media screen and (max-width:500px){
+    .header-container{
+        flex-direction: column;
+    }
+    .photos-ancho2{
+        display: none;
+    }
+    .photos-ancho3{
+        display: none;
+    }
+    .photos-ancho4{
+        display: none;
+    }
+ 
+}
+
+
+
+@media screen and (max-width:760px){
+    .header-container{
+        flex-direction: column;
+    }
+    .photos-ancho3{
+        display: none;
+    }
+    .photos-ancho4{
+        display: none;
+    }
+
+    .firstitem-recuadro{
+       display: none;
+    }
+
+    .grid-container{
+        height: 1400px;
+    }
+    
+    .firstitem-texto{
+        display: none;
+    }
+    .second-item{
+        display: none;
+    }
+
+    .third-item{
+        transform: translate(20%,-25%);
+    }
+
+    .four-item{
+        transform: translate(0%,-25%);
+    }
+
+    .five-item{
+        transform: translate(20%,-60%);
+    }
+
+    .six-item{
+        transform: translate(0%,-15%);
+    }
+    .sixitem-p { 
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .photos-ancho4{
+        display: none;
+    }
+
+}
