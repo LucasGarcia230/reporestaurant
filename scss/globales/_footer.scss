@@ -1,0 +1,21 @@
+.footer-container{
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    background-color: $bgfooter;
+}
+
+
+.footer-rs{
+    font-size: 30px;
+    width: 500px;
+    margin-left: 20px;
+}
+
+.footer-container p{
+    font-size: 20px;
+}
+
+.footer-text{
+    justify-content: center;
+}

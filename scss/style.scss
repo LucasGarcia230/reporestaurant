@@ -1,0 +1,17 @@
+/**base**/
+
+@import './base/globales';
+@import './base/mixins';
+@import './base/variables';
+
+/**globales**/
+@import './globales/header';
+@import './globales/footer';
+
+/**layout**/
+@import './layout/contacto';
+@import './layout/experiencia';
+@import './layout/index';
+@import './layout/menu';
+@import './layout/reservas';
+
