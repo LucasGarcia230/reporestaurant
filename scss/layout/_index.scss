@@ -43,14 +43,26 @@
         .photos-ancho2{
             width: $widthphoto;
             text-align: center;
+
+            @include phone{
+                display: none;
+            }
         }
         .photos-ancho3{
             width: $widthphoto;
             text-align: center;
+
+            @include tablet{
+                display: none;
+            }
         }
         .photos-ancho4{
             width: $widthphoto;
             text-align: center;
+
+            @include desktop{
+                display: none;
+            }
         }
         .photos-titulos{
             margin-top: 15px;

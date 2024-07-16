@@ -4,6 +4,10 @@
     background-color: $bgheader;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet{
+        flex-direction: column;
+    }
     
     .logo-container{
         img{
@@ -42,13 +46,13 @@
             text-decoration: none;
         }
         .enlaces:visited{
-            color:blue
+            color:$blue;
         }
         .enlaces:hover{
-           color: white
+           color: $white;
         }
         .enlaces:active{
-            color:lime
+            color: $lime;
         }
     }
 }

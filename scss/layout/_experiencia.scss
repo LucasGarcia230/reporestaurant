@@ -1,0 +1,222 @@
+.grid-container{
+    display:grid;
+    height: 2080px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33% 7% 25% 10% 25%;
+    grid-column-gap: 5%;
+    background-color: $bgheader;
+    grid-template-areas: 
+    'I1 I1'
+    'I2 I2'
+    'I3 I4'
+    'I7 I7'
+    'I5 I6';
+
+    @include tablet{
+        height: 1400px;
+    }
+
+    .grid-item{
+        font-size: 21px;
+    }
+
+
+    .first-item{
+        grid-area: I1;
+        display: inline-block;
+    }
+
+    .firstitem-img{
+        display: flex;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .firstitem-recuadro{
+        width: 35%;
+        height: 45%;
+        border: solid 1px;
+        position: relative;
+        display: flex;
+        background-color: currentColor;
+        position: relative;
+        opacity: 70%;
+        top: -70%;
+        left: 35%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        @include tablet{
+            display: none;
+        }
+    }
+
+    .firstitem-texto{
+        width: 35%;
+        height: 45%;
+        display: flex;
+        position: relative;
+        top: -115%;
+        left: 35%;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @include tablet{
+            display: none;
+        }
+    }
+
+    .firstitem-h2{
+        color: $white;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 30px;
+    }
+        
+    .firstitem-h4{
+        color: $white;
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 30px;
+    }
+        
+    .firstitem-p{
+        color:$white;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .second-item{
+        grid-area:I2;
+        background-color: $white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+
+        @include tablet{
+            display: none;
+        }
+    }
+        
+    .seconditem-h2{
+        font-size: 50px;
+        color: $lime;
+    }
+        
+    .seconditem-p{
+        font-size: 30px;
+        color: $lime;
+    }
+
+    .third-item{
+        grid-area:I3;
+        display: flex;
+        flex-direction: column;
+        transform: translate(20%,0);
+
+        @include tablet{
+            transform: translate(20%,-25%);
+        }
+    }
+        
+    .thirditem-img{
+        width: 75%;
+        height: 75%;
+        border-radius: 15px;
+    }
+        
+    .thirditem-h2{
+        width: 75%;
+    }
+        
+    .thirditem-p{
+        width: 75%;
+    }
+
+    .four-item{
+        grid-area:I4;
+        display: flex;
+        flex-direction: column;
+        /*transform: translate(-10%,0);*/
+        @include tablet{
+            transform: translate(0%,-25%);
+        }
+    }
+        
+    .fouritem-img{
+        width: 75%;
+        height: 100%;
+        border-radius: 15px;
+    }
+        
+    .fouritem-h2{
+        width: 75%;
+    }
+        
+    .fouritem-p{
+        width: 75%;
+    }
+        
+    .five-item{
+        grid-area:I5;
+        display: flex;
+        flex-direction: column;
+        transform: translate(20%,-33%);
+
+        @include tablet{
+            transform: translate(20%,-60%);
+        }
+    }
+        
+    .fiveitem-img{
+        width: 75%;
+        height: 100%;
+        border-radius: 15px;
+    }
+        
+    .fiveitem-h2{
+        width: 75%;
+    }
+        
+    .fiveitem-p{
+        width: 75%;
+    }
+
+    .six-item{
+        grid-area:I6;
+        display: flex;
+        flex-direction: column;
+        transform: translate(0%,-3%);
+
+        @include tablet{
+            transform: translate(0%,-15%);
+        }
+    }
+        
+    .sixitem-img{
+        width: 70%;
+        height: 70%;
+        border-radius: 15px;
+    }
+        
+    .sixitem-h2{
+        width: 75%;
+    }
+        
+    .sixitem-p{
+        width: 75%;
+
+        @include tablet{
+            font-size: 17px;
+        }
+    }
+        
+    .seven-item{
+        grid-area:I7;
+    }
+        
+}
+
