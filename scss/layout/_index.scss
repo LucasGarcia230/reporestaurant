@@ -1,83 +1,102 @@
-.ppal-container{
+.ppal-container {
     display: flex;
-    max-width: 100%;
+    max-width: $maxwidthphoto;
     height: auto;
     justify-content: center;
+    margin: 10px;
 
-    .carousel{
-        max-width: 100%;
+    .carousel {
+        max-width: $maxwidthphoto;
         height: auto;
-    }
-    .carousel-inner{
-        max-width: 100%;
-        height: auto;
-
-        .d-block{
-            max-width: 100%;
+        
+        .carousel-inner {
+            max-width: $maxwidthphoto;
             height: auto;
-            object-fit: contain;
+            
+            .d-block {
+                max-width: $maxwidthphoto;
+                height: auto;
+                object-fit: contain;
+            }
         }
     }
 }
 
-
-.photos-container{
+.photos-container {
     display: flex;
-    width: 100%;
+    width: $maxwidthphoto;
     height: 490px;
-    /*border: 1px solid green;*/
     background-color: $bgheader;
-    /*justify-content: center;*/
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 
-    .photos{
+    .photos {
         display: flex;
-        width: 100%;
-        margin-top: 50px;
+        width: 90%;
+        margin-top: 0 auto;
         justify-content: space-around;
-        
-        .photos-ancho1{
-            width: $widthphoto;
-            text-align: center;
-        }
-        .photos-ancho2{
-            width: $widthphoto;
-            text-align: center;
+        flex-wrap: wrap;
 
-            @include phone{
-                display: none;
+        .photos-ancho1,
+        .photos-ancho2,
+        .photos-ancho3,
+        .photos-ancho4 {
+            width: 22%;
+            text-align: center;
+            margin: $marginphoto;
+            box-shadow: 0 4px 8px $boxshad;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid $photoborder;
+            padding: 5px;
+
+            @include tablet {
+                &.photos-ancho1,
+                &.photos-ancho2 {
+                    width: 40%;
+                }
+
+                &.photos-ancho3 {
+                    display: none;
+                }
+            }
+
+            @include phone {
+                &.photos-ancho1 {
+                    width: 70%;
+                }
+
+                &.photos-ancho2 {
+                    display: none;
+                }
+            }
+
+            @include desktop {
+                &.photos-ancho4 {
+                    display: none;
+                }
             }
         }
-        .photos-ancho3{
-            width: $widthphoto;
-            text-align: center;
 
-            @include tablet{
-                display: none;
-            }
-        }
-        .photos-ancho4{
-            width: $widthphoto;
-            text-align: center;
-
-            @include desktop{
-                display: none;
-            }
-        }
-        .photos-titulos{
+        .photos-titulos {
             margin-top: 15px;
-            font-size: $fontsizephotos;
+            font-size: 1.5rem;
+            color: $photo-tit-text;
+            font-weight: bold;
         }
-        .photos-img{
-            width: $widthphoto;
-            height: $widthphoto;
-            object-fit: contain;
-        
+
+        .photos-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 6px;
         }
-        .photos-text{
-            font-size: $fontsizephotos;
+
+        .photos-text {
+            font-size: 1rem;
             font-style: italic;
-        
+            color: $photo-tit-text;
         }
     }
 }
+

@@ -1,0 +1,122 @@
+.selection {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px $boxshad;
+    text-align: center;
+
+    @include tablet{
+      width:80%;
+  }
+  
+  @include phone{
+      width: 90%;
+  }
+  
+    h2 {
+      font-size: 28px;
+      color: $txtmenu;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+  }
+  
+  .step {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  
+    button {
+      background-color: $bgbtnres;
+      border: none;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 18px;
+      width: 40px;
+      height: 40px;
+    }
+  
+    input {
+      width: 60px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin: 0 15px;
+      font-size: 18px;
+      padding: 5px;
+    }
+  }
+  
+  .date-picker input[type="date"],
+  .time-picker input[type="time"],
+  .table-preference select,
+  .contact-info input,
+  .comments textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+  }
+  
+  .service-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  
+    button {
+      background-color: $bgbtnres;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: $bgbtnreshover;
+      }
+  
+      &.active {
+        background-color: $bgbtnresactive;
+      }
+    }
+  }
+  
+  .reservation {
+    margin-top: 30px;
+  }
+  
+  .reserve-button {
+    background-color: #ff9800;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #fb8c00;
+    }
+  }

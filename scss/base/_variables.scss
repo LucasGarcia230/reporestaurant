@@ -6,16 +6,45 @@ $tablet: 760px;
 $desktop:1000px;
 
 //Colores
+
+//Header
 $bgheader: bisque;
+$blue: rgb(26, 26, 211); //Colores para links
+$white: rgb(223, 212, 212);//Colores para links y algunos texto experiencia
+$lime: rgb(33, 221, 33);//Colores para links y algunos texto experiencia
+
+
+//Index
+$boxshad:rgba(0, 0, 0, 0.1);
+$photoborder:#ddd;
+$photo-tit-text: #666;
+$maxwidthphoto: 100%;
+$marginphoto:10px;
+
+//Menu
+$bgmenu: gainsboro;
+$txtmenu: #333;
+$bgbtn: #5a5af0;
+$btncolor: #fff;
+$bgbtnhover: #4848c4;
+
+//Contacto
+$bgcontacto: lemonchiffon;
+
+//Reserva
+$bgbtnres: #4CAF50;
+$bgbtnreshover: #45a049;
+$bgbtnresactive: #2e7d32;
+
+//FOOTER
 $bgfooter: rgb(132, 139, 137);
-$txtnav: rgb(10, 6, 6);
-$blue: rgb(26, 26, 211);
-$white: rgb(223, 212, 212);
-$lime: rgb(33, 221, 33);
+
+
 
 
 //Fuente
 $fontSegoe: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$txtnav: rgb(10, 6, 6);
 
 //Tamaños
 $widthphoto: 250px;

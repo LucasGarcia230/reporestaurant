@@ -1,21 +1,27 @@
-.footer-container{
-    display: flex;
-    width: 100%;
-    min-height: 50px;
+.footer-container {
     background-color: $bgfooter;
-}
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    min-height: 50px;
 
+    .footer-rs {
+        margin-bottom: 10px;
 
-.footer-rs{
-    font-size: 30px;
-    width: 500px;
-    margin-left: 20px;
-}
+        a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
 
-.footer-container p{
-    font-size: 20px;
-}
+            &:hover {
+                color: #386dd0;
+            }
+        }
+    }
 
-.footer-text{
-    justify-content: center;
+    .footer-text {
+        font-size: 1em;
+        margin: 0;
+    }
 }

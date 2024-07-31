@@ -19,3 +19,10 @@
 }
 
 
+/**Mixin especialmente ocupado en experiencia**/
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+

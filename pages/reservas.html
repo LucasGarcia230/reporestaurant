@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <title>Reservas</title>
+
+    <!--SEO / keywords-->
+
+    <meta name="description" content="Reserva tu mesa en Rincon del sabor de forma rápida y sencilla.">
+    <meta name="keywords" content="reserva, mesa, restaurante, Rincon del sabor, rápida, sencilla">
+
+    <!--Favicon-->
+    
+    <link rel="icon" type="image/png" href="../assets/favicon/reserva-favicon.png">
+
     <!--Tipografia de google fonts Ver en proyecto CODERFLEX-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +24,6 @@
      <!--Script para iconos de redes sociales y otros-->
 
      <script src="https://kit.fontawesome.com/8406cd355c.js" crossorigin="anonymous"></script>
-    
-    <title>Reservas</title>
     
     <!--CDN BOOTSTRAP-->
     
@@ -57,27 +66,87 @@
     </header>
 
     <main>
-
-        <section class="ppal-container">
         
-        </section>
-    
-        <section class="photos-container">
+        <section class="selection">
+            <h2>Bienvenido</h2>
             
+            <div class="step">
+                <label>1) Escoja cantidad de comensales</label>
+                <div class="counter">
+                    <button class="decrease">▼</button>
+                    <input type="number" min="1" value="1">
+                    <button class="increase">▲</button>
+                </div>
+            </div>
+            
+            <div class="step">
+                <label>2) Fecha</label>
+                <div class="date-picker">
+                    <input type="date">
+                </div>
+            </div>
+            
+            <div class="step">
+                <label>3) Hora</label>
+                <div class="time-picker">
+                    <input type="time">
+                </div>
+            </div>
+            
+            <div class="step">
+                <label>4) Servicio</label>
+                <div class="service-options">
+                    <button class="service" data-service="Almuerzo">Almuerzo</button>
+                    <button class="service" data-service="Cena">Cena</button>
+                </div>
+            </div>
+            
+            <div class="step">
+                <label>5) Preferencia de mesa</label>
+                <div class="table-preference">
+                    <select>
+                        <option value="cerca-de-la-ventana">Cerca de la ventana</option>
+                        <option value="zona-privada">Zona privada</option>
+                        <option value="sin-preferencia">Sin preferencia</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="step">
+                <label>6) Información de contacto</label>
+                <div class="contact-info">
+                    <input type="text" placeholder="Nombre">
+                    <input type="tel" placeholder="Teléfono">
+                    <input type="email" placeholder="Correo electrónico">
+                </div>
+            </div>
+            
+            <div class="step">
+                <label>7) Comentarios adicionales</label>
+                <div class="comments">
+                    <textarea placeholder="Comentarios adicionales o solicitudes especiales"></textarea>
+                </div>
+            </div>
+            
+            <div class="reservation">
+                <button class="reserve-button">Reservar</button>
+            </div>
         </section>
-
+        
     </main>
     
     <footer class="footer-container">
-        
-        <div class="footer-rs">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+        <div class="footer-rs" aria-label="Social Media Links">
+
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+
         </div>
-        
-        <p class="footer-text">&copy;Lucas Garcia</p>
-        
+
+        <p class="footer-text">&copy; Lucas Garcia</p>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

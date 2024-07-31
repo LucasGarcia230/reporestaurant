@@ -3,6 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Inicio</title>
+    
+    <!--SEO / keywords-->
+
+    <meta name="description" content="Bienvenido a Rincon del sabor. Descubre nuestra deliciosa cocina y el ambiente acogedor.">
+    <meta name="keywords" content="restaurante, comida, Rinco del sabor, cocina, ambiente acogedor">
+
+    <!--Favicon-->
+    
+    <link rel="icon" type="image/png" href="assets/favicon/index-favicon.png">
+
     
     <!--Tipografia de google fonts Ver en proyecto CODERFLEX-->
 
@@ -14,8 +26,6 @@
 
      <script src="https://kit.fontawesome.com/8406cd355c.js" crossorigin="anonymous"></script>
     
-    <title>Inicio</title>
-    
     <!--CDN BOOTSTRAP-->
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -24,13 +34,13 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-
 </head>
   
   
 <body>
     
     <header>
+        
         <div class="header-container">
             
             <div class="logo-container">
@@ -42,7 +52,7 @@
             </div>
            
             <div>
-                <nav class="navbar">
+                <nav class="navbar" aria-label="Menu navegaciòn">
                     <ul>
                         <li><a class="enlaces" href="#">Inicio</a></li>
                         <li><a class="enlaces" href="./pages/experiencia.html">Experiencia</a></li>
@@ -52,34 +62,35 @@
                     </ul>
                 </nav>
             </div>
-
+        
         </div>
+
     </header>
 
     <main>
         
         <section class="ppal-container">
                 
-            <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="col-12">
                     
                 <div id="carouselExample" class="carousel slide">
                         
                     <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="./assets/inicio-2.jpg" class="d-block w-100" alt="...">
+                            <img src="./assets/imgppal1.png" class="d-block w-100" alt="Menu principal ganador carne a las finas hierbas">
                           </div>
                           <div class="carousel-item">
-                            <img src="./assets/inicio-2.jpg" class="d-block w-100" alt="...">
+                            <img src="./assets/imgppal2.png" class="d-block w-100" alt="Plato de carne asada con guarnición de vegetales.">
                           </div>
                           <div class="carousel-item">
-                            <img src="./assets/inicio-2.jpg" class="d-block w-100" alt="...">
+                            <img src="./assets/imgppal3.png" class="d-block w-100" alt="Saboroso pernil de cerdo con verduras variadas">
                           </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="Imagen anterior">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" aria-label="Imagen siguiente">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
@@ -88,32 +99,32 @@
                      
         </section>
     
-        <section class="photos-container">
+        <section class="photos-container" aria-label="Galeria de fotos">
             
             <div class="photos">
                 
                 <div class="photos-ancho1">
-                    <h2 class="photos-titulos">Opción 1</h2>
-                    <img src="./assets/photos1.jpg" alt="Foto 1" class="photos-img">
-                    <p class="photos-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos totam voluptates magnam quia illo nesciunt!</p>
+                    <h2 class="photos-titulos">Filete</h2>
+                    <img src="./assets/filtemignon.jpg" alt="Foto filte mignon" class="photos-img">
+                    <p class="photos-text">Filete mignon tierno con salsa de vino tinto, acompañado de espárragos y puré de papas.</p>
                 </div>
               
                 <div class="photos-ancho2">
-                    <h2 class="photos-titulos">Opción 2</h2>
-                    <img src="./assets/photos2.jpg" alt="Foto 2" class="photos-img">
-                    <p class="photos-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, commodi aspernatur laboriosam voluptatibus totam aut!</p>
+                    <h2 class="photos-titulos">Risotto</h2>
+                    <img src="./assets/risotto.jpg" alt="Foto risotto cremoso" class="photos-img">
+                    <p class="photos-text">Cremoso risotto con trufas negras, queso parmesano y un toque de aceite de trufa.</p>
                 </div>
                
                 <div class="photos-ancho3">
-                    <h2 class="photos-titulos">Opción 3</h2>
-                    <img src="./assets/photos3.jpg" alt="Foto 2" class="photos-img">
-                    <p class="photos-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eum animi, ipsam totam eligendi nobis!</p>
+                    <h2 class="photos-titulos">Salmon</h2>
+                    <img src="./assets/salmon.jpg" alt="Foto salmon ahumado" class="photos-img">
+                    <p class="photos-text">Delicado salmón ahumado, servido con eneldo fresco, alcaparras y una suave crema de limón.</p>
                 </div>
 
                 <div class="photos-ancho4">
-                    <h2 class="photos-titulos">Opción 4</h2>
-                    <img src="./assets/photos3.jpg" alt="Foto 2" class="photos-img">
-                    <p class="photos-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eum animi, ipsam totam eligendi nobis!</p>
+                    <h2 class="photos-titulos">Tarta belga</h2>
+                    <img src="./assets/tartabelga.png" alt="Foto tarta belga" class="photos-img">
+                    <p class="photos-text">Exquisita tarta de chocolate belga, con ganache de frambuesa y una base de almendra crujiente.</p>
                 </div>
     
             </div>
@@ -122,21 +133,23 @@
 
     </main>
     
-    
     <footer class="footer-container">
-        
-        <div class="footer-rs">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        
-        <p class="footer-text">&copy;Lucas Garcia</p>
-        
-    </footer>
 
+        <div class="footer-rs" aria-label="Social Media Links">
+
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+
+        </div>
+
+        <p class="footer-text">&copy; Lucas Garcia</p>
+
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
+
 
